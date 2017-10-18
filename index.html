@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Alternative Tweets</title>
+    </head>
+
+    <body>
+        <div class="top-bar">
+            <div class="title">
+                <img id="seal" src="assets/Seal.svg" alt="presidential seal">
+                <h1>MAKE TWEETS GREAT AGAIN</h1>
+            </div>
+            <p>
+                President Trump is known for his steady stream of
+                tweets. This map shows the ratio of pro Trump
+                and anti Trump tweets from Twitter users. Data comes
+                from the Twitter API and the tweets sentiment is analyized
+                using the Watson API.
+            </p>
+        </div>
+        <div id="top-bar-btm">
+        </div>
+
+        <div class="map-n-tweet">
+            <svg width="960" height="600" viewBox="0 0 960 600" preserveAspectRatio="xMinYMin meet"></svg>
+        </div>
+
+        <div class="ratio">
+            <div class="ratio-meter">
+                <div class="pointer">
+                </div>
+            </div>
+        </div>
+
+        <div class="implimentation">
+            <h2>
+                Implimentation and Limitations
+            </h2>
+            <p>
+                This was built using twitter api, watson api, d3 topojson.
+                <br>
+                Limited by the hashtags searched and by the current limitations of Watson to analyize sentiments.
+            </p>
+        </div>
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/topojson.v2.min.js"></script>    
+        <script type="application/javascript" src="javascript/main.js"></script>
+        
+    </body>
+</html>
